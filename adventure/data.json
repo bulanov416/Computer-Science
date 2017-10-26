@@ -1,0 +1,36 @@
+{
+	"rooms": [{
+		"id": "room1",
+		"name": "kitchen",
+		"description": "The first spawn room",
+		"points": 1,
+		"exits": [{"direction": "Forward", "next_room": "room2"}],
+		"treasure": ["paper"],
+		"visited": "false"
+		} , {
+		"id": "room2",
+		"name": "living room",
+		"description": "The place where you live",
+		"points": 5,
+		"exits": [{"direction": "Backward", "next_room": "room1"}],
+		"treasure": ["pen"],
+		"visited": "false"
+	}],
+	"startingRoom": "room1",
+	"items": [{
+		"id": "item1",
+		"name": "paper",
+		"description": "Something to write on",
+		"points": 3,
+		"treasure_message": "Hmmm, I wonder what is written on this wonderful piece of paper."
+	} , {
+		"id": "item2",
+		"name": "pen",
+		"description": "Something to write with",
+		"points": 3,
+		"treasure_message": "Hmmm, I wonder how much ink is left in this pen."
+	}]
+}
+
+
+
