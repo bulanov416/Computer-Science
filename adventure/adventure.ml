@@ -368,6 +368,9 @@ let rec interface (state : currentPlayerState) =
 			print_string "\nSorry, that is not a valid command. Please restrict your answer to 'Yes' or 'No'.\n";
 			interface state (*Tries again*)
 
+(*
+Game Engine
+*)
 and game (state : currentPlayerState)(command : string) =
 	if (command = "Launch") then begin (*This is only ever called once from interface*)
 		if ((getRoomFromId state.currentRoom state.rooms).items = []) then begin
@@ -548,8 +551,9 @@ interface startingState (*Calling the interface function. This starts the game w
 
 (*
 To-Do
--Get of error when typing just go or take
--Print item description at some point
+
+Empty :)
+
 *)
 
 
